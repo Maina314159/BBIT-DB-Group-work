@@ -1,1 +1,9 @@
+CREATE DATABASE SCHEMA WHILE BEING MINDFUL OF THE FOLLOWING :  ( SCAN THE HAND DRAWN DATABASE SCHEMA AND COMMIT AS A NEW FILE IN THE REPOSITORY)
 
+Correct identification of tables – 5 marks
+
+Correct primary keys – 4 marks
+
+Correct foreign keys and relationships – 4 marks
+
+Clarity and proper schema format – 2 marks  
