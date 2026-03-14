@@ -1,9 +1,59 @@
-CREATE DATABASE SCHEMA WHILE BEING MINDFUL OF THE FOLLOWING :  ( SCAN THE HAND DRAWN DATABASE SCHEMA AND COMMIT AS A NEW FILE IN THE REPOSITORY)
+PART C: RELATIONAL DATABASE SCHEMA (15 Marks)
 
-Correct identification of tables – 5 marks
+Customer
+PK ClientID
+Name
+Email
+PhoneNumber
 
-Correct primary keys – 4 marks
+Supplier
+PK SupplierID
+SupplierName
+ContactAddress
+PhoneNo
 
-Correct foreign keys and relationships – 4 marks
+Watch
+PK WatchID
+Name
+Price
+Material
+FK SupplierID
 
-Clarity and proper schema format – 2 marks  
+Employee
+PK EmployeeID
+EmployeeName
+Position
+PhoneNumber
+
+Order
+PK OrderID
+Status
+Pending
+TotalPrice
+FK ClientID
+FK EmployeeID
+
+Warranty
+PK WarrantyNo
+WarrantyExpireDate
+IssueDate
+
+Payment
+PK PaymentID
+PaymentDate
+PaymentAmount
+PaymentMethod
+
+Relationships
+
+Supplier (1) —— supplies —— (M) Watch
+
+Watch (M) —— sold in —— (M) Order
+
+Client (1) —— places —— (M) Order
+
+Employee (1) —— handles —— (M) Order
+
+Watch (1) —— has —— (1) Warranty
+
+Order (1) —— paid through —— (1) Payment
