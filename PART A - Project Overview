@@ -30,6 +30,8 @@ The system mainly supports sales processing and record management.
 
 OBJECTIVES
 
+The objectives describe what the system aims to achieve and why it is necessary.
+
 The objectives of the system are:
 
 To design a structured database for storing watch shop information.
@@ -45,6 +47,9 @@ To track warranties issued for watches.
 To improve efficiency and reduce manual record keeping.
 
 3.STAKEHOLDERS
+
+Stakeholders are individuals or groups who interact with the system or are affected by its operation.
+
 Shop Owner
 
 The owner uses the system to monitor sales performance, inventory levels, and customer activity.
