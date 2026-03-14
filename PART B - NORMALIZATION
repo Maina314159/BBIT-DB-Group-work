@@ -1,14 +1,50 @@
-NORMALIZATION TO BE DONE BY LESLYN AND MAINA ( INCLUDE ALL STEPS)
+PART B: NORMALIZATION (10 Marks)
+Initial Unnormalized Relation (UNF)
 
+SHOP_DATA
+(SupplierID, SupplierName, ContactAddress, PhoneNo, WatchID, WatchName, Price, Material, OrderID, Status, Pending, TotalPrice, ClientID, ClientName, Email, PhoneNumber, EmployeeID, EmployeeName, Position, WarrantyNo, WarrantyExpireDate, IssueDate, PaymentID, PaymentDate, PaymentAmount, PaymentMethod)
 
-QUESTION -:
-/*Perform decomposition of your ER Diagram. You should appropriately handle composite and multivalued attribute (create new table of the attribute, eliminate that entirely etc), identify and eliminate dependencies and ensure that the final tables are in 3 NF.   
-Important note: Not all ERDs will require extensive normalization. However, ERDs that include will usually require decomposition before creating the schema.
-Include the following (where applicable);
-Identification of relations and dependencies – 3 marks
-Correct normalization steps – 4 marks
-Final relations in 3NF or justification – 3 marks /*
+This structure contains redundant and dependent attributes.
 
-ANSWERS: 
+Functional Dependencies
 
+SupplierID → SupplierName, ContactAddress, PhoneNo
+
+WatchID → Name, Price, Material, SupplierID
+
+OrderID → Status, Pending, TotalPrice, ClientID, EmployeeID
+
+ClientID → Name, Email, PhoneNumber
+
+EmployeeID → EmployeeName, Position, PhoneNumber
+
+WarrantyNo → WarrantyExpireDate, IssueDate
+
+PaymentID → PaymentDate, PaymentAmount, PaymentMethod
+
+First Normal Form (1NF)
+
+Remove repeating groups and ensure atomic values.
+
+Tables:
+
+Supplier(SupplierID, SupplierName, ContactAddress, PhoneNo)
+
+Watch(WatchID, Name, Price, Material, SupplierID)
+
+Order(OrderID, Status, Pending, TotalPrice, ClientID, EmployeeID)
+
+Client(ClientID, Name, Email, PhoneNumber)
+
+Employee(EmployeeID, EmployeeName, Position, PhoneNumber)
+
+Warranty(WarrantyNo, WarrantyExpireDate, IssueDate)
+
+Payment(PaymentID, PaymentDate, PaymentAmount, PaymentMethod)
+
+Second Normal Form (2NF)
+
+Remove partial dependencies by ensuring all non-key attributes depend on the entire primary key.
+
+All relations now have single primary keys, therefore they satisfy 2NF.
 
