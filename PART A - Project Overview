@@ -1,20 +1,66 @@
-Project Idea Definition ( RDHWAN)
+PART A: PROJECT OVERVIEW 
+1. PROJECT IDEA DEFINITION
 
+Retail watch shops handle many transactions daily involving customers purchasing watches of different brands, models, and materials. In many small retail businesses, sales records and inventory tracking are still done manually using notebooks or spreadsheets. This method often leads to data redundancy, inaccurate inventory records, lost transaction details, and difficulty tracking customer purchases or supplier information.
 
-//INSERT YOUR ANSWER
+The proposed system is a Watch Retail Shop Database System designed to store and manage information related to watches, suppliers, customers, employees, orders, payments, and warranties. The database will allow the shop to record all sales transactions, track inventory, and manage relationships with customers and suppliers.
 
+By implementing this system, the shop will improve efficiency, reduce data redundancy, maintain accurate sales records, and generate useful reports for business management.
 
+2. SCOPE AND OBJECTIVES
+SCOPE
 
-SCOPE (RIDHWAN)
+The scope of the system focuses on managing the main operations of a watch retail shop. The database will manage information about:
 
-//INSERT YOUR ANSWER
+Watches sold in the shop
 
-OBJECTIVES ( MATHEW)
+Suppliers who provide watches
 
-//INSERT YOUR ANSWER
+Customers purchasing watches
 
+Employees processing orders
 
-KEY STAKEHOLDER( MATHEW)
+Orders placed by customers
 
-//INSERT YOUR ANSWER
+Payments for purchases
 
+Warranties issued for watches
+
+The system mainly supports sales processing and record management.
+
+OBJECTIVES
+
+The objectives of the system are:
+
+To design a structured database for storing watch shop information.
+
+To record and track customer orders.
+
+To maintain information about suppliers and watches supplied.
+
+To store payment details for each transaction.
+
+To track warranties issued for watches.
+
+To improve efficiency and reduce manual record keeping.
+
+3.STAKEHOLDERS
+Shop Owner
+
+The owner uses the system to monitor sales performance, inventory levels, and customer activity.
+
+Employees
+
+Employees interact with the system when recording orders, processing sales, and managing customer information.
+
+Customers
+
+Customers benefit indirectly as the system ensures accurate order processing and proper warranty tracking.
+
+Suppliers
+
+Suppliers provide watches to the shop, and their details are stored in the system.
+
+System Administrator
+
+The administrator manages the database system and ensures its proper operation.
