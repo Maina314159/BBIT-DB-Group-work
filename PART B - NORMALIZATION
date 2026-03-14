@@ -48,3 +48,39 @@ Remove partial dependencies by ensuring all non-key attributes depend on the ent
 
 All relations now have single primary keys, therefore they satisfy 2NF.
 
+Third Normal Form (3NF)
+
+Remove transitive dependencies.
+
+Final tables remain independent with attributes depending only on their primary key.
+
+Final Relations in 3NF
+
+Supplier
+(PK SupplierID, SupplierName, ContactAddress, PhoneNo)
+
+Watch
+(PK WatchID, Name, Price, Material, FK SupplierID)
+
+Client
+(PK ClientID, Name, Email, PhoneNumber)
+
+Employee
+(PK EmployeeID, EmployeeName, Position, PhoneNumber)
+
+Order
+(PK OrderID, Status, Pending, TotalPrice, FK ClientID, FK EmployeeID)
+
+Warranty
+(PK WarrantyNo, WarrantyExpireDate, IssueDate)
+
+Payment
+(PK PaymentID, PaymentDate, PaymentAmount, PaymentMethod)
+
+All relations satisfy Third Normal Form (3NF) because:
+
+Every table has a primary key.
+
+No partial dependencies exist.
+
+No transitive dependencies exist
