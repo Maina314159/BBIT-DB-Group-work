@@ -22,9 +22,7 @@ WarrantyNo → WarrantyExpireDate, IssueDate
 
 PaymentID → PaymentDate, PaymentAmount, PaymentMethod
 
-First Normal Form (1NF)
-
-Remove repeating groups and ensure atomic values.
+FIRST NORMAL FORM (1NF)
 
 Tables:
 
@@ -46,7 +44,7 @@ Second Normal Form (2NF)
 
 Remove partial dependencies by ensuring all non-key attributes depend on the entire primary key.
 
-All relations now have single primary keys, therefore they satisfy 2NF.
+All relations now have single primary keys.
 
 Third Normal Form (3NF)
 
@@ -77,10 +75,3 @@ Warranty
 Payment
 (PK PaymentID, PaymentDate, PaymentAmount, PaymentMethod)
 
-All relations satisfy Third Normal Form (3NF) because:
-
-Every table has a primary key.
-
-No partial dependencies exist.
-
-No transitive dependencies exist
